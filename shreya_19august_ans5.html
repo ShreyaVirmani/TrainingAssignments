@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ans5</title>
+	<script type="text/javascript">
+		
+		function longest(){
+            var s1=document.strings.value1.value;
+			var s2= s1.split(" ");
+            var long_count = 0;
+
+           for(var i = 0; i < s2.length; i++){
+            if(s2[i].length > long_count){ 
+	        long_count = s2[i].length;   
+		    }
+	       }
+    for(var j=0;j<s2.length;j++){
+
+    	if(s2[j].length==long_count){
+    		alert(s2[j]);
+    	}
+    }
+
+		
+	}
+	</script>
+</head>
+<body>
+		<form name="strings">
+			ENTER STRING: <input type="text" name="value1"><br/>   
+			<button name="on_submit" type="button" onclick="longest()">SUBMIT</button>
+		</form>
+</body>
+</html>

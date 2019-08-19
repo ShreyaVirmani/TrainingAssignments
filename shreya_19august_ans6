@@ -1,0 +1,18 @@
+// function VariableType(var3)
+// {
+// 	console.log(typeof(var3));
+// }
+// VariableType(30)
+
+
+
+function VariableType(var4)
+{
+    if(typeof(var4)===String){
+        console.log("its a string")
+    }
+    else{
+        console.log("not a string")
+    }
+}
+VariableType(30)

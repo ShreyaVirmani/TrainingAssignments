@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> find the not repeating character passed in string</title>
+
+  <script>
+    
+    function non_repeated_element(){
+             var s1 = document.strings.value1.value;
+             for (var i = 0; i < s1.length; i++) {
+             var c = s1.charAt(i);
+             if (s1.indexOf(c) == i && s1.indexOf(c, i + 1) == -1) {
+                alert(c); 
+    }
+  }     
+    }
+  </script>
+</head>
+<body>
+    <form name="strings">
+      ENTER STRING: <input type="text" name="value1"><br> <br>  
+      <button name="on_submit" type="button" onclick="non_repeated_element()">SUBMIT</button>
+    </form>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,65 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Converts the first letter of each word of a string in upper case</title>
+</head>
+<script type="text/javascript">
+	
+	function uppercase(str)
+{
+  var array1 = str.split(' ');
+  var newarray1 = [];
+    
+  for(var x = 0; x < array1.length; x++){
+      newarray1.push(array1[x].charAt(0).toUpperCase()+array1[x].slice(1));
+  }
+  return newarray1.join(' ');
+}
+// console.log(uppercase("the quick brown fox"));
+</script>
+<body>
+  <form name="strings">
+			ENTER STRING: <input type="text" name="value1"><br/>   
+			<button name="on_submit" type="button" onclick="conversion()">SUBMIT</button>
+		</form>
+ 
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS assignment 4</title>
+
+	<script type="text/javascript">
+		
+		function conversion(){
+
+			var s1=document.strings.value1.value;
+            var s2 = s1.toLowerCase().split(" ");
+            for (var i = 0; i < s2.length; i++) {
+       
+            s2[i] = s2[i].charAt(0).toUpperCase() + s2[i].substring(1);     
+   }
+   
+    var s3=s2.join(" "); 
+		alert(s3);
+		}
+	</script>
+</head>
+<body>
+
+
+		<form name="strings">
+			ENTER STRING: <input type="text" name="value1"><br/>   
+			<button name="on_submit" type="button" onclick="conversion()">SUBMIT</button>
+		</form>
+ 
+
+</body>
+</html>
