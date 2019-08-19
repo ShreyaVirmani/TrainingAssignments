@@ -1,24 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>JavaScript function to test whether a string starts with a specified string</title>
- <script>
-  function startsWith() {
-  	var input=document.strings.value1.value;
-    var string=document.strings.value2.value;
-  return input.indexOf(string) === 0;
-}
-
-</script>
+	<title>JavaScript function to test whether a string starts with a specified string</title>
 </head>
 <body>
-	<form name="strings">
-			ENTER INPUT: <input type="text" name="value1"><br/>  
-			ENTER STRING: <input type="text" name="value1"><br/>   
-			<button name="on_submit" type="button" onclick="startsWith()">SUBMIT</button>
-		</form>
- 
+<script type="text/javascript">
+	function startsWith(input, string) {
+  return input.indexOf(string) === 0;
+}
+console.log(startsWith('Graduate hires are going through training', 'hires'));
 
+</script>
 </body>
 </html>
